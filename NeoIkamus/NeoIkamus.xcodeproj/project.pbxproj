@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D52B97C91A85F36F009C02A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52B97C81A85F36F009C02A2 /* AppDelegate.swift */; };
+		D52B97CB1A85F36F009C02A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52B97CA1A85F36F009C02A2 /* ViewController.swift */; };
+		D52B97CE1A85F36F009C02A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D52B97CC1A85F36F009C02A2 /* Main.storyboard */; };
+		D52B97D01A85F36F009C02A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D52B97CF1A85F36F009C02A2 /* Images.xcassets */; };
+		D52B97D31A85F36F009C02A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D52B97D11A85F36F009C02A2 /* LaunchScreen.xib */; };
+		D52B97DF1A85F36F009C02A2 /* NeoIkamusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52B97DE1A85F36F009C02A2 /* NeoIkamusTests.swift */; };
+		D52B97E91A85F45C009C02A2 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B97E81A85F45C009C02A2 /* Realm.framework */; };
+		D52B97EB1A85F488009C02A2 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B97EA1A85F488009C02A2 /* libc++.dylib */; };
+		D52B97F31A85F597009C02A2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B97F21A85F597009C02A2 /* NotificationCenter.framework */; };
+		D52B97F81A85F597009C02A2 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52B97F71A85F597009C02A2 /* TodayViewController.swift */; };
+		D52B97FA1A85F597009C02A2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D52B97F91A85F597009C02A2 /* MainInterface.storyboard */; };
+		D52B97FE1A85F597009C02A2 /* DailyWords.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D52B97F01A85F597009C02A2 /* DailyWords.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D52B98031A85F6B5009C02A2 /* KiiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B98021A85F6B5009C02A2 /* KiiSDK.framework */; };
+		D52B98051A85F6E0009C02A2 /* RLMSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52B98041A85F6E0009C02A2 /* RLMSupport.swift */; };
+		D52B98091A85FA4B009C02A2 /* KiiAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B98081A85FA4B009C02A2 /* KiiAnalytics.framework */; };
+		D52B980B1A85FB21009C02A2 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B980A1A85FB21009C02A2 /* Accounts.framework */; };
+		D52B980D1A85FB37009C02A2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B980C1A85FB37009C02A2 /* ImageIO.framework */; };
+		D52B980F1A85FB80009C02A2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B980E1A85FB80009C02A2 /* libsqlite3.dylib */; };
+		D52B98111A85FB87009C02A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B98101A85FB87009C02A2 /* Security.framework */; };
+		D52B98131A85FB8E009C02A2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B98121A85FB8E009C02A2 /* Social.framework */; };
+		D52B98151A85FB9F009C02A2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B98141A85FB9F009C02A2 /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D52B97D91A85F36F009C02A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D52B97BB1A85F36F009C02A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D52B97C21A85F36F009C02A2;
+			remoteInfo = NeoIkamus;
+		};
+		D52B97FB1A85F597009C02A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D52B97BB1A85F36F009C02A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D52B97EF1A85F597009C02A2;
+			remoteInfo = DailyWords;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D52B97FD1A85F597009C02A2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D52B97FE1A85F597009C02A2 /* DailyWords.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D52B97C31A85F36F009C02A2 /* NeoIkamus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoIkamus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52B97C71A85F36F009C02A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D52B97C81A85F36F009C02A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D52B97CA1A85F36F009C02A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D52B97CD1A85F36F009C02A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D52B97CF1A85F36F009C02A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D52B97D21A85F36F009C02A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D52B97D81A85F36F009C02A2 /* NeoIkamusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeoIkamusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52B97DD1A85F36F009C02A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D52B97DE1A85F36F009C02A2 /* NeoIkamusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeoIkamusTests.swift; sourceTree = "<group>"; };
+		D52B97E81A85F45C009C02A2 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		D52B97EA1A85F488009C02A2 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		D52B97F01A85F597009C02A2 /* DailyWords.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyWords.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52B97F21A85F597009C02A2 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		D52B97F61A85F597009C02A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D52B97F71A85F597009C02A2 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		D52B97F91A85F597009C02A2 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		D52B98021A85F6B5009C02A2 /* KiiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiiSDK.framework; sourceTree = "<group>"; };
+		D52B98041A85F6E0009C02A2 /* RLMSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLMSupport.swift; sourceTree = "<group>"; };
+		D52B98061A85F776009C02A2 /* NeoIkamus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NeoIkamus-Bridging-Header.h"; sourceTree = "<group>"; };
+		D52B98081A85FA4B009C02A2 /* KiiAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiiAnalytics.framework; sourceTree = "<group>"; };
+		D52B980A1A85FB21009C02A2 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		D52B980C1A85FB37009C02A2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D52B980E1A85FB80009C02A2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		D52B98101A85FB87009C02A2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D52B98121A85FB8E009C02A2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		D52B98141A85FB9F009C02A2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D52B97C01A85F36F009C02A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52B98151A85FB9F009C02A2 /* MobileCoreServices.framework in Frameworks */,
+				D52B98131A85FB8E009C02A2 /* Social.framework in Frameworks */,
+				D52B98111A85FB87009C02A2 /* Security.framework in Frameworks */,
+				D52B980F1A85FB80009C02A2 /* libsqlite3.dylib in Frameworks */,
+				D52B980D1A85FB37009C02A2 /* ImageIO.framework in Frameworks */,
+				D52B980B1A85FB21009C02A2 /* Accounts.framework in Frameworks */,
+				D52B97EB1A85F488009C02A2 /* libc++.dylib in Frameworks */,
+				D52B97E91A85F45C009C02A2 /* Realm.framework in Frameworks */,
+				D52B98031A85F6B5009C02A2 /* KiiSDK.framework in Frameworks */,
+				D52B98091A85FA4B009C02A2 /* KiiAnalytics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D52B97D51A85F36F009C02A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D52B97ED1A85F597009C02A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52B97F31A85F597009C02A2 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D52B97BA1A85F36F009C02A2 = {
+			isa = PBXGroup;
+			children = (
+				D52B97EA1A85F488009C02A2 /* libc++.dylib */,
+				D52B97C51A85F36F009C02A2 /* NeoIkamus */,
+				D52B97DB1A85F36F009C02A2 /* NeoIkamusTests */,
+				D52B97F41A85F597009C02A2 /* DailyWords */,
+				D52B97F11A85F597009C02A2 /* Frameworks */,
+				D52B97C41A85F36F009C02A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D52B97C41A85F36F009C02A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D52B97C31A85F36F009C02A2 /* NeoIkamus.app */,
+				D52B97D81A85F36F009C02A2 /* NeoIkamusTests.xctest */,
+				D52B97F01A85F597009C02A2 /* DailyWords.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D52B97C51A85F36F009C02A2 /* NeoIkamus */ = {
+			isa = PBXGroup;
+			children = (
+				D52B98081A85FA4B009C02A2 /* KiiAnalytics.framework */,
+				D52B98041A85F6E0009C02A2 /* RLMSupport.swift */,
+				D52B98021A85F6B5009C02A2 /* KiiSDK.framework */,
+				D52B97E81A85F45C009C02A2 /* Realm.framework */,
+				D52B97C81A85F36F009C02A2 /* AppDelegate.swift */,
+				D52B97CA1A85F36F009C02A2 /* ViewController.swift */,
+				D52B97CC1A85F36F009C02A2 /* Main.storyboard */,
+				D52B97CF1A85F36F009C02A2 /* Images.xcassets */,
+				D52B97D11A85F36F009C02A2 /* LaunchScreen.xib */,
+				D52B97C61A85F36F009C02A2 /* Supporting Files */,
+				D52B98061A85F776009C02A2 /* NeoIkamus-Bridging-Header.h */,
+			);
+			path = NeoIkamus;
+			sourceTree = "<group>";
+		};
+		D52B97C61A85F36F009C02A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D52B97C71A85F36F009C02A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D52B97DB1A85F36F009C02A2 /* NeoIkamusTests */ = {
+			isa = PBXGroup;
+			children = (
+				D52B97DE1A85F36F009C02A2 /* NeoIkamusTests.swift */,
+				D52B97DC1A85F36F009C02A2 /* Supporting Files */,
+			);
+			path = NeoIkamusTests;
+			sourceTree = "<group>";
+		};
+		D52B97DC1A85F36F009C02A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D52B97DD1A85F36F009C02A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D52B97F11A85F597009C02A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D52B98141A85FB9F009C02A2 /* MobileCoreServices.framework */,
+				D52B98121A85FB8E009C02A2 /* Social.framework */,
+				D52B98101A85FB87009C02A2 /* Security.framework */,
+				D52B980E1A85FB80009C02A2 /* libsqlite3.dylib */,
+				D52B980C1A85FB37009C02A2 /* ImageIO.framework */,
+				D52B980A1A85FB21009C02A2 /* Accounts.framework */,
+				D52B97F21A85F597009C02A2 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D52B97F41A85F597009C02A2 /* DailyWords */ = {
+			isa = PBXGroup;
+			children = (
+				D52B97F71A85F597009C02A2 /* TodayViewController.swift */,
+				D52B97F91A85F597009C02A2 /* MainInterface.storyboard */,
+				D52B97F51A85F597009C02A2 /* Supporting Files */,
+			);
+			path = DailyWords;
+			sourceTree = "<group>";
+		};
+		D52B97F51A85F597009C02A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D52B97F61A85F597009C02A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D52B97C21A85F36F009C02A2 /* NeoIkamus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D52B97E21A85F36F009C02A2 /* Build configuration list for PBXNativeTarget "NeoIkamus" */;
+			buildPhases = (
+				D52B97BF1A85F36F009C02A2 /* Sources */,
+				D52B97C01A85F36F009C02A2 /* Frameworks */,
+				D52B97C11A85F36F009C02A2 /* Resources */,
+				D52B97FD1A85F597009C02A2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D52B97FC1A85F597009C02A2 /* PBXTargetDependency */,
+			);
+			name = NeoIkamus;
+			productName = NeoIkamus;
+			productReference = D52B97C31A85F36F009C02A2 /* NeoIkamus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D52B97D71A85F36F009C02A2 /* NeoIkamusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D52B97E51A85F36F009C02A2 /* Build configuration list for PBXNativeTarget "NeoIkamusTests" */;
+			buildPhases = (
+				D52B97D41A85F36F009C02A2 /* Sources */,
+				D52B97D51A85F36F009C02A2 /* Frameworks */,
+				D52B97D61A85F36F009C02A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D52B97DA1A85F36F009C02A2 /* PBXTargetDependency */,
+			);
+			name = NeoIkamusTests;
+			productName = NeoIkamusTests;
+			productReference = D52B97D81A85F36F009C02A2 /* NeoIkamusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D52B97EF1A85F597009C02A2 /* DailyWords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D52B97FF1A85F597009C02A2 /* Build configuration list for PBXNativeTarget "DailyWords" */;
+			buildPhases = (
+				D52B97EC1A85F597009C02A2 /* Sources */,
+				D52B97ED1A85F597009C02A2 /* Frameworks */,
+				D52B97EE1A85F597009C02A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyWords;
+			productName = DailyWords;
+			productReference = D52B97F01A85F597009C02A2 /* DailyWords.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D52B97BB1A85F36F009C02A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Duren;
+				TargetAttributes = {
+					D52B97C21A85F36F009C02A2 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D52B97D71A85F36F009C02A2 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D52B97C21A85F36F009C02A2;
+					};
+					D52B97EF1A85F597009C02A2 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = D52B97BE1A85F36F009C02A2 /* Build configuration list for PBXProject "NeoIkamus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D52B97BA1A85F36F009C02A2;
+			productRefGroup = D52B97C41A85F36F009C02A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D52B97C21A85F36F009C02A2 /* NeoIkamus */,
+				D52B97D71A85F36F009C02A2 /* NeoIkamusTests */,
+				D52B97EF1A85F597009C02A2 /* DailyWords */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D52B97C11A85F36F009C02A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52B97CE1A85F36F009C02A2 /* Main.storyboard in Resources */,
+				D52B97D31A85F36F009C02A2 /* LaunchScreen.xib in Resources */,
+				D52B97D01A85F36F009C02A2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D52B97D61A85F36F009C02A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D52B97EE1A85F597009C02A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52B97FA1A85F597009C02A2 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D52B97BF1A85F36F009C02A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52B97CB1A85F36F009C02A2 /* ViewController.swift in Sources */,
+				D52B98051A85F6E0009C02A2 /* RLMSupport.swift in Sources */,
+				D52B97C91A85F36F009C02A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D52B97D41A85F36F009C02A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52B97DF1A85F36F009C02A2 /* NeoIkamusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D52B97EC1A85F597009C02A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52B97F81A85F597009C02A2 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D52B97DA1A85F36F009C02A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D52B97C21A85F36F009C02A2 /* NeoIkamus */;
+			targetProxy = D52B97D91A85F36F009C02A2 /* PBXContainerItemProxy */;
+		};
+		D52B97FC1A85F597009C02A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D52B97EF1A85F597009C02A2 /* DailyWords */;
+			targetProxy = D52B97FB1A85F597009C02A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D52B97CC1A85F36F009C02A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D52B97CD1A85F36F009C02A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D52B97D11A85F36F009C02A2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D52B97D21A85F36F009C02A2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D52B97E01A85F36F009C02A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D52B97E11A85F36F009C02A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D52B97E31A85F36F009C02A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NeoIkamus",
+				);
+				INFOPLIST_FILE = NeoIkamus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NeoIkamus/NeoIkamus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D52B97E41A85F36F009C02A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NeoIkamus",
+				);
+				INFOPLIST_FILE = NeoIkamus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NeoIkamus/NeoIkamus-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		D52B97E61A85F36F009C02A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NeoIkamusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeoIkamus.app/NeoIkamus";
+			};
+			name = Debug;
+		};
+		D52B97E71A85F36F009C02A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NeoIkamusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeoIkamus.app/NeoIkamus";
+			};
+			name = Release;
+		};
+		D52B98001A85F597009C02A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DailyWords/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D52B98011A85F597009C02A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DailyWords/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D52B97BE1A85F36F009C02A2 /* Build configuration list for PBXProject "NeoIkamus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52B97E01A85F36F009C02A2 /* Debug */,
+				D52B97E11A85F36F009C02A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D52B97E21A85F36F009C02A2 /* Build configuration list for PBXNativeTarget "NeoIkamus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52B97E31A85F36F009C02A2 /* Debug */,
+				D52B97E41A85F36F009C02A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D52B97E51A85F36F009C02A2 /* Build configuration list for PBXNativeTarget "NeoIkamusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52B97E61A85F36F009C02A2 /* Debug */,
+				D52B97E71A85F36F009C02A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D52B97FF1A85F597009C02A2 /* Build configuration list for PBXNativeTarget "DailyWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52B98001A85F597009C02A2 /* Debug */,
+				D52B98011A85F597009C02A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D52B97BB1A85F36F009C02A2 /* Project object */;
+}
