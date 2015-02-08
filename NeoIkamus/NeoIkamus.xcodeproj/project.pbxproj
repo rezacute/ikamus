@@ -28,6 +28,13 @@
 		D52B98111A85FB87009C02A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B98101A85FB87009C02A2 /* Security.framework */; };
 		D52B98131A85FB8E009C02A2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B98121A85FB8E009C02A2 /* Social.framework */; };
 		D52B98151A85FB9F009C02A2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B98141A85FB9F009C02A2 /* MobileCoreServices.framework */; };
+		D52B98181A860E50009C02A2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52B98171A860E50009C02A2 /* User.swift */; };
+		D52B98301A870461009C02A2 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B97EA1A85F488009C02A2 /* libc++.dylib */; };
+		D52B98311A870473009C02A2 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52B97E81A85F45C009C02A2 /* Realm.framework */; };
+		D52B98391A8712F5009C02A2 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52B98381A8712F5009C02A2 /* Word.swift */; };
+		D52B983A1A871A31009C02A2 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52B98381A8712F5009C02A2 /* Word.swift */; };
+		D52B983C1A872026009C02A2 /* id_en.realm in Resources */ = {isa = PBXBuildFile; fileRef = D52B983B1A872026009C02A2 /* id_en.realm */; };
+		D52B983E1A8720B7009C02A2 /* en_id.realm in Resources */ = {isa = PBXBuildFile; fileRef = D52B983D1A8720B7009C02A2 /* en_id.realm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +96,11 @@
 		D52B98101A85FB87009C02A2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D52B98121A85FB8E009C02A2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		D52B98141A85FB9F009C02A2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D52B98171A860E50009C02A2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = entities/User.swift; sourceTree = "<group>"; };
+		D52B98271A8701C0009C02A2 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libc++.dylib"; sourceTree = DEVELOPER_DIR; };
+		D52B98381A8712F5009C02A2 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Word.swift; path = entities/Word.swift; sourceTree = "<group>"; };
+		D52B983B1A872026009C02A2 /* id_en.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = id_en.realm; sourceTree = "<group>"; };
+		D52B983D1A8720B7009C02A2 /* en_id.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = en_id.realm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52B98311A870473009C02A2 /* Realm.framework in Frameworks */,
+				D52B98301A870461009C02A2 /* libc++.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +166,8 @@
 		D52B97C51A85F36F009C02A2 /* NeoIkamus */ = {
 			isa = PBXGroup;
 			children = (
+				D52B983F1A876CD5009C02A2 /* datasource */,
+				D52B98161A860D3A009C02A2 /* models */,
 				D52B98081A85FA4B009C02A2 /* KiiAnalytics.framework */,
 				D52B98041A85F6E0009C02A2 /* RLMSupport.swift */,
 				D52B98021A85F6B5009C02A2 /* KiiSDK.framework */,
@@ -195,6 +211,7 @@
 		D52B97F11A85F597009C02A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D52B98271A8701C0009C02A2 /* libc++.dylib */,
 				D52B98141A85FB9F009C02A2 /* MobileCoreServices.framework */,
 				D52B98121A85FB8E009C02A2 /* Social.framework */,
 				D52B98101A85FB87009C02A2 /* Security.framework */,
@@ -222,6 +239,24 @@
 				D52B97F61A85F597009C02A2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D52B98161A860D3A009C02A2 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				D52B98171A860E50009C02A2 /* User.swift */,
+				D52B98381A8712F5009C02A2 /* Word.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		D52B983F1A876CD5009C02A2 /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				D52B983D1A8720B7009C02A2 /* en_id.realm */,
+				D52B983B1A872026009C02A2 /* id_en.realm */,
+			);
+			name = datasource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,8 +363,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D52B97CE1A85F36F009C02A2 /* Main.storyboard in Resources */,
+				D52B983C1A872026009C02A2 /* id_en.realm in Resources */,
 				D52B97D31A85F36F009C02A2 /* LaunchScreen.xib in Resources */,
 				D52B97D01A85F36F009C02A2 /* Images.xcassets in Resources */,
+				D52B983E1A8720B7009C02A2 /* en_id.realm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +392,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52B98181A860E50009C02A2 /* User.swift in Sources */,
 				D52B97CB1A85F36F009C02A2 /* ViewController.swift in Sources */,
+				D52B98391A8712F5009C02A2 /* Word.swift in Sources */,
 				D52B98051A85F6E0009C02A2 /* RLMSupport.swift in Sources */,
 				D52B97C91A85F36F009C02A2 /* AppDelegate.swift in Sources */,
 			);
@@ -366,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D52B97DF1A85F36F009C02A2 /* NeoIkamusTests.swift in Sources */,
+				D52B983A1A871A31009C02A2 /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +573,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/NeoIkamus",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -552,6 +593,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/NeoIkamus",
 				);
 				INFOPLIST_FILE = NeoIkamusTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
