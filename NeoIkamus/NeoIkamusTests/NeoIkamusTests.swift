@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import Realm
 
 class NeoIkamusTests: XCTestCase {
     
@@ -21,16 +22,34 @@ class NeoIkamusTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
+//    func testExample() {
+//       let id_en_path = NSBundle(forClass: self.classForCoder).pathForResource("id-en", ofType: "json")
+//       let en_id_path = NSBundle(forClass: self.classForCoder).pathForResource("en-id", ofType: "json")
+//       let jsonData = NSData(contentsOfFile: en_id_path!)
+//       var error: NSError?
+//       
+//        var array: NSArray = NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions.AllowFragments, error: &error) as NSArray
+//        
+//        var i = 0
+//        let realm = RLMRealm.inMemoryRealmWithIdentifier("inMemory")
+//        realm.beginWriteTransaction()
+//        for obj in array as [NSDictionary]{
+//            var word = Word()
+//            word.id = i;
+//            word.token = obj["word"] as String
+//            word.translation = obj["translation"] as String
+//            
+//            realm.addObject(word)
+//            i++
+//        }
+//        
+//        realm.commitWriteTransaction()
+//        
+//        
+//        realm.writeCopyToPath("/Users/syahriza/Documents/private/en_id.realm", error: &error)
+//       
+//        
+//    }
+
     
 }

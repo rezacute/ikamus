@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Realm
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +19,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Kii.beginWithID("2d009c6a", andKey: "e5bdf5b06145ffe43a8bc06965af5575", andSite: KiiSite.SG)
         KiiAnalytics.beginWithID("2d009c6a", andKey: "e5bdf5b06145ffe43a8bc06965af5575", andSite: KiiAnalyticsSite.SG)
-        
+        if(User.allObjects().count == 0){
+            let userFields = KiiUserFields()
+            KiiUser.registerAsPseudoUserWithUserFields(userFields, block: { (loggedUser:KiiUser!, error:NSError!) -> Void in
+                if(error==nil){
+                    
+                    let user = User()
+                    let realm = RLMRealm.defaultRealm()
+                    user.accessToken = loggedUser.accessToken
+                    user.userID = loggedUser.userID
+                    
+                    realm.beginWriteTransaction()
+                    realm.addObject(user)
+                    realm.commitWriteTransaction()
+                    KiiAnalytics.trackEvent("310" , withExtras: ["_type":"AppOpen","UserId":user.userID])
+                    
+                }
+            })
+            
+        }else{
+            let user = User.allObjects()[0] as User
+            
+            KiiUser.authenticateWithToken(user.accessToken, andBlock: { (kiiUser:KiiUser!, error:NSError!) -> Void in
+                
+                if(error == nil){
+                    KiiAnalytics.trackEvent("310" , withExtras: ["_type":"AppOpen","UserId":user.userID])
+                }
+                
+            })
+        }
         return true
     }
     
